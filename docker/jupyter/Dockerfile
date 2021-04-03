@@ -1,4 +1,6 @@
-FROM jupyter/pyspark-notebook
+ARG jupyter_version=4d9c9bd9ced0
+
+FROM jupyter/pyspark-notebook:${jupyter_version}
 
 ARG shared_workspace=/opt/workspace
 
